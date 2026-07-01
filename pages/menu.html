@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu — Stackly Restaurant</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar scrolled" id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="../images/stackly-logo.webp" alt="Stackly Restaurant" class="logo-img">
+    Stackly Restaurant
+  </a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="menu.html" class="active">Menu</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="why-us.html">Why Us</a></li>
+    <li><a href="login.html" class="nav-btn">Login</a></li>
+    <li><a href="signup.html" class="nav-btn nav-btn-fill">Sign Up</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="menu-page-hero">
+  <div class="container">
+    <p class="eyebrow">Our Offerings</p>
+    <h1>The Stackly Menu</h1>
+    <p>Crafted from locally sourced seasonal ingredients, fired with passion.</p>
+  </div>
+</section>
+
+<!-- STICKY CATEGORY TABS -->
+<div class="menu-tabs" id="menuTabs">
+  <div class="menu-tabs-inner">
+    <button class="tab-btn active" data-target="starters">Starters</button>
+    <button class="tab-btn" data-target="mains">Mains</button>
+    <button class="tab-btn" data-target="seafood">Seafood</button>
+    <button class="tab-btn" data-target="vegetarian">Vegetarian</button>
+    <button class="tab-btn" data-target="desserts">Desserts</button>
+    <button class="tab-btn" data-target="drinks">Drinks</button>
+  </div>
+</div>
+
+<main style="background:var(--cream);">
+
+  <!-- ======== STARTERS ======== -->
+  <section class="menu-section section-pad" id="starters">
+    <div class="container">
+      <p class="eyebrow">Begin the Journey</p>
+      <h2 class="menu-section-title">Starters</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">Light, bold, and designed to awaken the palate.</p>
+      <div class="menu-items-grid">
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&fm=webp&q=80" alt="Burrata" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Heritage Burrata</span>
+              <span class="menu-item-price">$18</span>
+            </div>
+            <p class="menu-item-desc">Creamy buffalo burrata, heirloom tomatoes, basil oil, aged balsamic, toasted sourdough crisp.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1625944525533-473f1a3d54e7?w=600&fm=webp&q=80" alt="Soup" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Roasted Bone Broth Soup</span>
+              <span class="menu-item-price">$16</span>
+            </div>
+            <p class="menu-item-desc">Slow-roasted marrow bones, truffle oil drizzle, sourdough croutons, fresh chives, crème fraîche.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag">Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1551248429-40975aa4de74?w=600&fm=webp&q=80" alt="Tartare" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Wagyu Beef Tartare</span>
+              <span class="menu-item-price">$26</span>
+            </div>
+            <p class="menu-item-desc">Hand-cut A5 wagyu, shallots, capers, Dijon, quail egg yolk, pumpernickel toast.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag">Signature</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=600&fm=webp&q=80" alt="Scallops" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Pan-Seared Scallops</span>
+              <span class="menu-item-price">$28</span>
+            </div>
+            <p class="menu-item-desc">Diver scallops, cauliflower purée, pancetta crisps, micro herbs, brown butter lemon.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MAINS ======== -->
+  <section class="menu-section" style="padding:3rem 0 5rem;background:#fff;" id="mains">
+    <div class="container">
+      <p class="eyebrow">Centre of the Plate</p>
+      <h2 class="menu-section-title">Mains</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">Every main is built around one exceptional ingredient, treated with restraint.</p>
+      <div class="menu-items-grid">
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&fm=webp&q=80" alt="Steak" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Charred Côte de Boeuf</span>
+              <span class="menu-item-price">$68</span>
+            </div>
+            <p class="menu-item-desc">28-day dry-aged, rosemary garlic butter, bone marrow jus, roasted shallots, pommes purée.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag">Signature</span>
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&fm=webp&q=80" alt="Duck" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Duck Confit</span>
+              <span class="menu-item-price">$52</span>
+            </div>
+            <p class="menu-item-desc">48-hour confit leg, cherry gastrique, lentils du Puy, roasted root vegetables, duck jus.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag">Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?w=600&fm=webp&q=80" alt="Lamb" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Rack of Lamb</span>
+              <span class="menu-item-price">$58</span>
+            </div>
+            <p class="menu-item-desc">Herb-crusted, black garlic purée, rosemary jus, grilled asparagus, fondant potato.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=600&fm=webp&q=80" alt="Chicken" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Wood-Roasted Chicken</span>
+              <span class="menu-item-price">$44</span>
+            </div>
+            <p class="menu-item-desc">Free-range half chicken, preserved lemon, thyme jus, crispy skin, whipped parsnip, seasonal greens.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SEAFOOD ======== -->
+  <section class="menu-section section-pad" id="seafood">
+    <div class="container">
+      <p class="eyebrow">From the Sea</p>
+      <h2 class="menu-section-title">Seafood</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">Day-boat caught, simply prepared to let the ocean speak.</p>
+      <div class="menu-items-grid">
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=600&fm=webp&q=80" alt="Halibut" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Smoked Halibut</span>
+              <span class="menu-item-price">$52</span>
+            </div>
+            <p class="menu-item-desc">Alder-smoked, fennel velouté, pickled coastal herbs, ikura, lemon oil.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag gf">Gluten-Free</span>
+              <span class="item-tag">Signature</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1559742811-822873691df8?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1559742811-822873691df8?w=600&fm=webp&q=80" alt="Lobster" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Butter-Poached Lobster</span>
+              <span class="menu-item-price">$72</span>
+            </div>
+            <p class="menu-item-desc">Maine lobster tail, saffron beurre blanc, pea tendril, finger lime caviar, brioche crumble.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag">Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&fm=webp&q=80" alt="Salmon" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Cedar-Planked Salmon</span>
+              <span class="menu-item-price">$46</span>
+            </div>
+            <p class="menu-item-desc">Scottish salmon, dill crème fraîche, cucumber ribbons, pickled mustard seeds, watercress.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== VEGETARIAN ======== -->
+  <section class="menu-section" style="padding:3rem 0 5rem;background:#fff;" id="vegetarian">
+    <div class="container">
+      <p class="eyebrow">From the Garden</p>
+      <h2 class="menu-section-title">Vegetarian</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">Plant-forward dishes with the same precision as everything else on the menu.</p>
+      <div class="menu-items-grid">
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&fm=webp&q=80" alt="Risotto" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Black Truffle Risotto</span>
+              <span class="menu-item-price">$38</span>
+            </div>
+            <p class="menu-item-desc">Carnaroli rice, Périgord truffle, aged Parmigiano-Reggiano, white wine, chive oil.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1572453800999-e8d2d1589b7c?w=600&fm=webp&q=80" alt="Mushroom" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Wild Mushroom Wellington</span>
+              <span class="menu-item-price">$34</span>
+            </div>
+            <p class="menu-item-desc">Porcini duxelles, spinach, puff pastry, red wine jus, roasted garlic cream, crispy sage.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=600&fm=webp&q=80" alt="Cauliflower" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Roasted Cauliflower Steak</span>
+              <span class="menu-item-price">$30</span>
+            </div>
+            <p class="menu-item-desc">Whole roasted head, harissa tahini, pomegranate, toasted pine nuts, fresh herbs, preserved lemon.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+              <span class="item-tag gf">Gluten-Free</span>
+              <span class="item-tag spicy">Mild Spice</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DESSERTS ======== -->
+  <section class="menu-section section-pad" id="desserts">
+    <div class="container">
+      <p class="eyebrow">Sweet Endings</p>
+      <h2 class="menu-section-title">Desserts</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">The final note — indulgent, balanced, and worth every bite.</p>
+      <div class="menu-items-grid">
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&fm=webp&q=80" alt="Tart" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Caramel Honey Tart</span>
+              <span class="menu-item-price">$24</span>
+            </div>
+            <p class="menu-item-desc">Rooftop honey, burnt caramel, smoked vanilla custard, fleur de sel, buttery pastry shell.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+              <span class="item-tag">Signature</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&fm=webp&q=80" alt="Chocolate" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Dark Chocolate Fondant</span>
+              <span class="menu-item-price">$20</span>
+            </div>
+            <p class="menu-item-desc">70% Valrhona, molten centre, salted caramel ice cream, cocoa tuile, gold leaf.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item-card">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&fm=webp&q=80" type="image/webp"/>
+            <img class="menu-item-img" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&fm=webp&q=80" alt="Pavlova" loading="lazy"/>
+          </picture>
+          <div class="menu-item-body">
+            <div class="menu-item-top">
+              <span class="menu-item-name">Seasonal Pavlova</span>
+              <span class="menu-item-price">$18</span>
+            </div>
+            <p class="menu-item-desc">Crisp meringue, Chantilly cream, summer berries, passion fruit curd, micro basil.</p>
+            <div class="menu-item-tags">
+              <span class="item-tag veg">Vegetarian</span>
+              <span class="item-tag gf">Gluten-Free</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== DRINKS ======== -->
+  <section class="menu-section" style="padding:3rem 0 5rem;background:#fff;" id="drinks">
+    <div class="container">
+      <p class="eyebrow">To Sip</p>
+      <h2 class="menu-section-title">Drinks</h2>
+      <div class="menu-section-divider"></div>
+      <p class="menu-section-desc">A carefully curated cellar and bar programme to complement every course.</p>
+
+      <h3 style="font-family:var(--font-display);color:var(--charcoal);margin-bottom:1.2rem;font-size:1.25rem;">Cocktails</h3>
+      <div class="drinks-list" style="margin-bottom:3rem;">
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Stackly Old Fashioned</h4>
+            <p>Bourbon, smoked sugar, aromatic bitters, orange peel</p>
+          </div>
+          <span class="drink-price">$18</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Garden Spritz</h4>
+            <p>Elderflower, Aperol, prosecco, cucumber, mint</p>
+          </div>
+          <span class="drink-price">$16</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Dark & Smoky</h4>
+            <p>Mezcal, ginger beer, lime, chilli salt rim</p>
+          </div>
+          <span class="drink-price">$17</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Honey Sour</h4>
+            <p>Whiskey, rooftop honey, lemon, egg white</p>
+          </div>
+          <span class="drink-price">$18</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Negroni Bianco</h4>
+            <p>Gin, Cocchi Americano, Suze, lemon twist</p>
+          </div>
+          <span class="drink-price">$17</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Mocktail: Coastal Breeze</h4>
+            <p>Yuzu, sparkling water, lychee, basil — non-alcoholic</p>
+          </div>
+          <span class="drink-price">$12</span>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);color:var(--charcoal);margin-bottom:1.2rem;font-size:1.25rem;">Wine by the Glass</h3>
+      <div class="drinks-list" style="margin-bottom:3rem;">
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Chablis Premier Cru</h4>
+            <p>Domaine Laroche, Burgundy, France — crisp, mineral</p>
+          </div>
+          <span class="drink-price">$22</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Barolo DOCG</h4>
+            <p>Marchesi di Barolo, Piedmont, Italy — full, tannic</p>
+          </div>
+          <span class="drink-price">$26</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Sauvignon Blanc</h4>
+            <p>Cloudy Bay, Marlborough, NZ — vibrant, citrus</p>
+          </div>
+          <span class="drink-price">$19</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h4>Pinot Noir</h4>
+            <p>Elk Cove, Willamette Valley, Oregon — silky, earthy</p>
+          </div>
+          <span class="drink-price">$24</span>
+        </div>
+      </div>
+
+      <h3 style="font-family:var(--font-display);color:var(--charcoal);margin-bottom:1.2rem;font-size:1.25rem;">Non-Alcoholic &amp; Hot</h3>
+      <div class="drinks-list">
+        <div class="drink-item">
+          <div class="drink-info"><h4>Sparkling Water</h4><p>San Pellegrino, 750ml</p></div>
+          <span class="drink-price">$6</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info"><h4>Cold-Pressed Juice</h4><p>Seasonal fruits, daily selection</p></div>
+          <span class="drink-price">$9</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info"><h4>Specialty Coffee</h4><p>Single-origin espresso, V60, cold brew</p></div>
+          <span class="drink-price">$7</span>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info"><h4>Loose-Leaf Tea</h4><p>Curated seasonal selection</p></div>
+          <span class="drink-price">$6</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHEF'S NOTE -->
+  <section class="chefs-note">
+    <div class="container">
+      <p class="eyebrow">From the Kitchen</p>
+      <blockquote>"Every plate that leaves this kitchen carries the hands of the farmer, the fisherman, and the forager. We are only the last step in a long, honest chain."</blockquote>
+      <cite>— Chef Mara Voss, Executive Chef</cite>
+    </div>
+  </section>
+
+  <!-- RESERVATION CTA -->
+  <section class="reservation-band">
+    <div class="res-overlay"></div>
+    <picture>
+      <source srcset="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&fm=webp&q=80" type="image/webp"/>
+      <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&fm=webp&q=80" alt="Restaurant atmosphere" class="res-bg" loading="lazy"/>
+    </picture>
+    <div class="res-content">
+      <h2>Ready to Experience the Menu?</h2>
+      <p>Reserve your table and let us craft the perfect evening.</p>
+      <a href="signup.html" class="btn btn-gold">Book a Table</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo"><img src="../images/stackly-logo.webp" alt="" class="logo-img-sm"> Stackly Restaurant</p>
+      <p>12 Hearth Lane, Downtown Reserve<br/>Open Tue–Sun · 5 PM – 11 PM</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>reservations@stacklyrestaurant.com</p>
+      <p>+1 (555) 740-2831</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Tab navigation smooth scroll + active state
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const target = document.getElementById(btn.dataset.target);
+      if (target) {
+        const offset = target.getBoundingClientRect().top + window.scrollY - 130;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      }
+    });
+  });
+
+  // Highlight active tab on scroll
+  const sections = ['starters','mains','seafood','vegetarian','desserts','drinks'];
+  window.addEventListener('scroll', () => {
+    let current = sections[0];
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 180) current = id;
+    });
+    tabBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.target === current);
+    });
+  }, { passive: true });
+</script>
+</body>
+</html>

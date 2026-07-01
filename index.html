@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stackly Restaurant — Fine Dining</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><img src="images/stackly-logo.webp" alt="Stackly Restaurant" class="logo-img"> Stackly Restaurant</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/menu.html">Menu</a></li>
+    <li><a href="pages/menu.html">Menu</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
+    <li><a href="pages/reviews.html">Reviews</a></li>
+    <li><a href="pages/why-us.html">Why Us</a></li>
+    <li><a href="pages/login.html" class="nav-btn">Login</a></li>
+    <li><a href="pages/signup.html" class="nav-btn nav-btn-fill">Sign Up</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&fm=webp&q=85" type="image/webp"/>
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&fm=webp&q=85" alt="Fine dining ambiance" class="hero-bg" loading="eager"/>
+  </picture>
+  <canvas id="emberCanvas"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Est. 2018 · Downtown Reserve</p>
+    <h1 class="hero-title">Where Fire<br/><em>Meets Flavour</em></h1>
+    <p class="hero-sub">A culinary journey crafted over open flame, seasonal ingredients, and decades of passion.</p>
+    <div class="hero-cta">
+      <a href="#menu-preview" class="btn btn-gold">Explore Menu</a>
+      <a href="pages/reviews.html" class="btn btn-outline">Read Reviews</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- INTRO STRIP -->
+<section class="intro-strip">
+  <div class="strip-item"><span class="strip-num">12+</span><span class="strip-label">Years of Craft</span></div>
+  <div class="strip-divider"></div>
+  <div class="strip-item"><span class="strip-num">4.9★</span><span class="strip-label">Average Rating</span></div>
+  <div class="strip-divider"></div>
+  <div class="strip-item"><span class="strip-num">200+</span><span class="strip-label">Dishes Created</span></div>
+  <div class="strip-divider"></div>
+  <div class="strip-item"><span class="strip-num">50k+</span><span class="strip-label">Happy Guests</span></div>
+</section>
+
+<!-- STORY -->
+<section class="story section-pad">
+  <div class="container story-grid">
+    <div class="story-images">
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=700&fm=webp&q=80" type="image/webp"/>
+        <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=700&fm=webp&q=80" alt="Chef at work" class="story-img story-img-main" loading="lazy"/>
+      </picture>
+      <picture>
+        <source srcset="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&fm=webp&q=80" type="image/webp"/>
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&fm=webp&q=80" alt="Plated dish" class="story-img story-img-sm" loading="lazy"/>
+      </picture>
+    </div>
+    <div class="story-text">
+      <p class="eyebrow">Our Story</p>
+      <h2 class="section-title">Born from Flame, <br/>Shaped by Seasons</h2>
+      <p>Stackly Restaurant began as a single wood-fired hearth in a converted warehouse. Chef Mara Voss believed that fire is not just a cooking method — it's a philosophy. Every dish honours the raw, the real, and the carefully sourced.</p>
+      <p>Today we work directly with twenty local farms, a heritage grain mill, and a rooftop apiary. The menu changes with the land, not with trends.</p>
+      <a href="pages/why-us.html" class="btn btn-dark">Discover Our Ethos</a>
+    </div>
+  </div>
+</section>
+
+<!-- MENU PREVIEW -->
+<section class="menu-preview section-pad bg-dark" id="menu-preview">
+  <div class="container">
+    <p class="eyebrow eyebrow-light">Signature Dishes</p>
+    <h2 class="section-title light">A Taste of What Awaits</h2>
+    <div class="menu-grid">
+
+      <article class="menu-card">
+        <div class="menu-img-wrap">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&fm=webp&q=80" type="image/webp"/>
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&fm=webp&q=80" alt="Wood-fired steak" loading="lazy"/>
+          </picture>
+        </div>
+        <div class="menu-info">
+          <span class="menu-tag">Mains</span>
+          <h3>Charred Côte de Boeuf</h3>
+          <p>28-day dry-aged, rosemary garlic butter, bone marrow jus</p>
+          <span class="menu-price">$68</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img-wrap">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=600&fm=webp&q=80" type="image/webp"/>
+            <img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=600&fm=webp&q=80" alt="Seafood dish" loading="lazy"/>
+          </picture>
+        </div>
+        <div class="menu-info">
+          <span class="menu-tag">Seafood</span>
+          <h3>Smoked Halibut</h3>
+          <p>Alder-smoked, fennel velouté, pickled coastal herbs, ikura</p>
+          <span class="menu-price">$52</span>
+        </div>
+      </article>
+
+      <article class="menu-card">
+        <div class="menu-img-wrap">
+          <picture>
+            <source srcset="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&fm=webp&q=80" type="image/webp"/>
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&fm=webp&q=80" alt="Dessert" loading="lazy"/>
+          </picture>
+        </div>
+        <div class="menu-info">
+          <span class="menu-tag">Dessert</span>
+          <h3>Caramel Honey Tart</h3>
+          <p>Rooftop honey, burnt caramel, smoked vanilla custard, smoked vanilla</p>
+          <span class="menu-price">$24</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY TEASER -->
+<section class="gallery-teaser section-pad">
+  <div class="container">
+    <p class="eyebrow">Visual Journey</p>
+    <h2 class="section-title">Captured Moments</h2>
+  </div>
+  <div class="gallery-strip">
+    <picture><source srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&fm=webp&q=80" type="image/webp"/><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500&fm=webp&q=80" alt="Restaurant interior" loading="lazy"/></picture>
+    <picture><source srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&fm=webp&q=80" type="image/webp"/><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&fm=webp&q=80" alt="Colorful plate" loading="lazy"/></picture>
+    <picture><source srcset="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&fm=webp&q=80" type="image/webp"/><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&fm=webp&q=80" alt="Food close up" loading="lazy"/></picture>
+    <picture><source srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&fm=webp&q=80" type="image/webp"/><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=500&fm=webp&q=80" alt="Dining table" loading="lazy"/></picture>
+    <picture><source srcset="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&fm=webp&q=80" type="image/webp"/><img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=500&fm=webp&q=80" alt="Wine and food" loading="lazy"/></picture>
+  </div>
+  <div class="container" style="text-align:center;margin-top:2rem">
+    <a href="pages/gallery.html" class="btn btn-gold">View Full Gallery</a>
+  </div>
+</section>
+
+<!-- REVIEW TEASER -->
+<section class="review-teaser section-pad bg-cream">
+  <div class="container">
+    <p class="eyebrow">What Guests Say</p>
+    <h2 class="section-title">Voices from the Table</h2>
+    <div class="reviews-row">
+      <blockquote class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Stackly Restaurant is unlike any restaurant I've visited. The Côte de Boeuf was transcendent — you could taste the smoke and care in every bite."</p>
+        <cite>— Isabelle N., Food Critic</cite>
+      </blockquote>
+      <blockquote class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Our anniversary dinner was flawless. The staff remembered our names, the pacing was perfect, and the wine pairing was inspired."</p>
+        <cite>— James & Priya O.</cite>
+      </blockquote>
+      <blockquote class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"I've eaten at Michelin-starred places across Europe, and Stackly Restaurant holds its own with effortless confidence. Remarkable."</p>
+        <cite>— Thomas L., Travel Writer</cite>
+      </blockquote>
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="pages/reviews.html" class="btn btn-dark">All Reviews</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION BAND -->
+<section class="reservation-band">
+  <div class="res-overlay"></div>
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&fm=webp&q=80" type="image/webp"/>
+    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1600&fm=webp&q=80" alt="Restaurant atmosphere" class="res-bg" loading="lazy"/>
+  </picture>
+  <div class="res-content">
+    <h2>Ready for an Unforgettable Evening?</h2>
+    <p>Reserve your table and let us craft the night.</p>
+    <a href="pages/signup.html" class="btn btn-gold">Book a Table</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo"><img src="images/stackly-logo.webp" alt="" class="logo-img-sm"> Stackly Restaurant</p>
+      <p>12 Hearth Lane, Downtown Reserve<br/>Open Tue–Sun · 5 PM – 11 PM</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/menu.html">Menu</a></li>
+    <li><a href="pages/menu.html">Menu</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
+        <li><a href="pages/reviews.html">Reviews</a></li>
+        <li><a href="pages/why-us.html">Why Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="pages/login.html">Login</a></li>
+        <li><a href="pages/signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>reservations@stacklyrestaurant.com</p>
+      <p>+1 (555) 740-2831</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Stackly Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

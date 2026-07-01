@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery — Stackly Restaurant</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <a href="../index.html" class="nav-logo"><img src="../images/stackly-logo.webp" alt="Stackly Restaurant" class="logo-img"> Stackly Restaurant</a>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    <li><a href="why-us.html">Why Us</a></li>
+    <li><a href="login.html" class="nav-btn">Login</a></li>
+    <li><a href="signup.html" class="nav-btn nav-btn-fill">Sign Up</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&fm=webp&q=80" type="image/webp"/>
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1600&fm=webp&q=80" alt="Restaurant interior" class="page-hero-bg"/>
+  </picture>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <p class="eyebrow">Visual Collection</p>
+    <h1>Our Gallery</h1>
+  </div>
+</section>
+
+<!-- GALLERY SECTION -->
+<section class="section-pad">
+  <div class="container">
+    <p class="eyebrow">Curated Moments</p>
+    <h2 class="section-title reveal">Every Frame Tells a Story</h2>
+    <p class="reveal" style="color:var(--mid);max-width:580px;margin-bottom:2rem">From our open-flame kitchen to the candlelit dining room — a glimpse into the world of Stackly Restaurant.</p>
+
+    <div class="gallery-filters reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="food">Food</button>
+      <button class="filter-btn" data-filter="interior">Interior</button>
+      <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+      <button class="filter-btn" data-filter="events">Events</button>
+    </div>
+
+    <div class="masonry-grid">
+
+      <div class="masonry-item" data-category="food" data-caption="Charred Côte de Boeuf">
+        <picture><source srcset="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&fm=webp&q=85" alt="Wood-fired steak" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="interior" data-caption="The Main Dining Room">
+        <picture><source srcset="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&fm=webp&q=85" alt="Restaurant interior" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="food" data-caption="Smoked Halibut">
+        <picture><source srcset="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1519984388953-d2406bc725e1?w=800&fm=webp&q=85" alt="Seafood dish" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="kitchen" data-caption="Chef at the Hearth">
+        <picture><source srcset="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&fm=webp&q=85" alt="Chef cooking" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="food" data-caption="Caramel Honey Tart">
+        <picture><source srcset="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&fm=webp&q=85" alt="Dessert" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="interior" data-caption="Private Dining Suite">
+        <picture><source srcset="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&fm=webp&q=85" alt="Dining table setting" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="food" data-caption="Seasonal Salad">
+        <picture><source srcset="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&fm=webp&q=85" alt="Colorful dish" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="events" data-caption="Wine Evening">
+        <picture><source srcset="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=800&fm=webp&q=85" alt="Wine and food" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="food" data-caption="Morning Bread Service">
+        <picture><source srcset="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&fm=webp&q=85" alt="Artisan bread" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="kitchen" data-caption="Wood Fire Preparation">
+        <picture><source srcset="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&fm=webp&q=85" alt="Plated dish kitchen" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="events" data-caption="Private Celebration">
+        <picture><source srcset="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=800&fm=webp&q=85" alt="Private event" loading="lazy"/></picture>
+      </div>
+
+      <div class="masonry-item" data-category="interior" data-caption="Bar & Lounge">
+        <picture><source srcset="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&fm=webp&q=85" type="image/webp"/><img src="https://images.unsplash.com/photo-1486297678162-eb2a19b0a32d?w=800&fm=webp&q=85" alt="Bar area" loading="lazy"/></picture>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img src="" alt="" id="lightboxImg"/>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-logo"><img src="../images/stackly-logo.webp" alt="" class="logo-img-sm"> Stackly Restaurant</p>
+      <p>12 Hearth Lane, Downtown Reserve<br/>Open Tue–Sun · 5 PM – 11 PM</p>
+    </div>
+    <div class="footer-links">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+    <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="why-us.html">Why Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Account</h4>
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>reservations@stacklyrestaurant.com</p>
+      <p>+1 (555) 740-2831</p>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Twitter">TW</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><p>© 2026 Stackly Restaurant. All rights reserved.</p></div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
